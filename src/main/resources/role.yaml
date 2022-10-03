@@ -1,0 +1,15 @@
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: jobs-manager
+rules:
+  - verbs:
+      - get
+      - list
+      - create
+      - update
+      - watch
+    apiGroups:
+      - batch
+    resources:
+      - jobs
