@@ -61,7 +61,7 @@ Then run a Maven install, the `quarkus-openshift` plugin will build the applicat
 mvn clean install
 ```
 
-In order for the application to be able to create jobs using the OpenShift API, the applications service account will need permissions to interact with job resources. The following commands will apply the necessary permissions through a new role and a role binding for the service account (you will need to adjust te namespace in `role-binding.yaml`):
+In order for the application to be able to create jobs using the OpenShift API, the applications service account will need permissions to interact with job resources. The following commands will apply the necessary permissions through a new role and a role binding for the service account (you will need to adjust the namespace in `role-binding.yaml`):
 
 ```
 oc apply -f role.yaml
